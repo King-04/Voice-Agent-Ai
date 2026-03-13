@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package wazobia;
+
+// Wazobia Audio Service
+service AudioService {
+  // Process audio file and get response
+  rpc ProcessAudio (AudioRequest) returns (AudioResponse) {}
+  
+  // Check server health
+  rpc HealthCheck (HealthRequest) returns (HealthResponse) {}
+}
+
+// Request with audio data
+message AudioRequest {
+  bytes audio_data = 1;        // Audio file bytes
+  string filename = 2;          // Original filename
+  string format = 3;            // Audio format (mp3, wav, etc.)
+}
+
+// Response with audio data
+message AudioResponse {
+  bytes audio_data = 1;         // Response audio bytes
+  string format = 2;            // Response format (wav)
+  float duration = 3;           // Duration in seconds
+  bool success = 4;             // Success status
+  string error_message = 5;     // Error message if failed
+}
+
+// Health check request
+message HealthRequest {
+  string service = 1;
+}
+
+// Health check response
+message HealthResponse {
+  bool healthy = 1;
+  string status = 2;
+  string service = 3;
+}

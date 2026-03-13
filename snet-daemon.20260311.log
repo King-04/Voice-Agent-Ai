@@ -1,0 +1,89 @@
+2026-03-11T06:42:47.656Z	INFO	Logger initialized
+2026-03-11T06:42:47.657Z	INFO	Final configuration: 
+2026-03-11T06:42:47.657Z	INFO	alerts_email	{"value": ""}
+2026-03-11T06:42:47.657Z	INFO	allowed_user_flag	{"value": false}
+2026-03-11T06:42:47.657Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-11T06:42:47.657Z	INFO	auto_ssl_domain	{"value": ""}
+2026-03-11T06:42:47.657Z	INFO	blockchain_enabled	{"value": false}
+2026-03-11T06:42:47.657Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-11T06:42:47.657Z	INFO	daemon_end_point	{"value": "127.0.0.1:8080"}
+2026-03-11T06:42:47.658Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-11T06:42:47.658Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-11T06:42:47.658Z	INFO	ipfs_end_point	{"value": "http://ipfs.singularitynet.io:80"}
+2026-03-11T06:42:47.658Z	INFO	ipfs_timeout	{"value": 30}
+2026-03-11T06:42:47.658Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-11T06:42:47.658Z	INFO	metering_enabled	{"value": "false"}
+2026-03-11T06:42:47.658Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-11T06:42:47.658Z	INFO	passthrough_enabled	{"value": true}
+2026-03-11T06:42:47.658Z	INFO	passthrough_endpoint	{"value": "httpp://localhost:50051"}
+2026-03-11T06:42:47.658Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-11T06:42:47.658Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-11T06:42:47.658Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-11T06:42:47.658Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-11T06:42:47.658Z	INFO	service_heartbeat_type	{"value": "http"}
+2026-03-11T06:42:47.658Z	INFO	service_id	{"value": "wazobia"}
+2026-03-11T06:42:47.658Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-11T06:42:47.658Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-11T06:42:47.658Z	INFO	Etcd server is disabled in the config file.
+2026-03-11T06:42:47.659Z	INFO	Derive data from JSON	{"Network": "sepolia", "NetwrokId": "11155111", "RegistryAddress": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "Blockchain endpoint": "https://sepolia.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-11T06:42:47.688Z	WARN	There is a newer version of the Daemon v6.2.1 available. You are currently on v5.1.4, please consider upgrading.
+2026-03-11T06:42:47.692Z	FATAL	Unable to initialize daemon	{"error": "unable to load specifiec SSL X509 keypair: open /etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem: permission denied", "errorVerbose": "open /etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem: permission denied\nunable to load specifiec SSL X509 keypair\ngithub.com/singnet/snet-daemon/snetd/cmd.newDaemon\n\t/mnt/c/Users/semyon/go/src/snet-daemon/snetd/cmd/serve.go:124\ngithub.com/singnet/snet-daemon/snetd/cmd.init.func9\n\t/mnt/c/Users/semyon/go/src/snet-daemon/snetd/cmd/serve.go:58\ngithub.com/singnet/snet-daemon/snetd/cmd.init.func10\n\t/mnt/c/Users/semyon/go/src/snet-daemon/snetd/cmd/flags.go:38\ngithub.com/spf13/cobra.(*Command).execute\n\t/home/semyon/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:989\ngithub.com/spf13/cobra.(*Command).ExecuteC\n\t/home/semyon/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:1117\ngithub.com/spf13/cobra.(*Command).Execute\n\t/home/semyon/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:1041\nmain.main\n\t/mnt/c/Users/semyon/go/src/snet-daemon/snetd/main.go:10\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:271\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_amd64.s:1695"}
+2026-03-11T22:28:07.955Z	INFO	Logger initialized	{"level": "debug"}
+2026-03-11T22:28:07.956Z	INFO	Final configuration: 
+2026-03-11T22:28:07.956Z	INFO	allowed_user_flag	{"value": false}
+2026-03-11T22:28:07.956Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-11T22:28:07.956Z	INFO	blockchain_enabled	{"value": false}
+2026-03-11T22:28:07.956Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-11T22:28:07.956Z	INFO	daemon_endpoint	{"value": "0.0.0.0:10000"}
+2026-03-11T22:28:07.956Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-11T22:28:07.956Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-11T22:28:07.957Z	INFO	ipfs_endpoint	{"value": "https://ipfs.singularitynet.io:443"}
+2026-03-11T22:28:07.957Z	INFO	lighthouse_endpoint	{"value": "https://gateway.lighthouse.storage/ipfs/"}
+2026-03-11T22:28:07.957Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-11T22:28:07.957Z	INFO	metering_enabled	{"value": "false"}
+2026-03-11T22:28:07.957Z	INFO	metering_endpoint	{"value": "https://marketplace-mt-v2.singularitynet.io"}
+2026-03-11T22:28:07.957Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-11T22:28:07.957Z	INFO	passthrough_enabled	{"value": true}
+2026-03-11T22:28:07.957Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-11T22:28:07.957Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-11T22:28:07.957Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-11T22:28:07.957Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-11T22:28:07.957Z	INFO	service_endpoint	{"value": "http://localhost:50051"}
+2026-03-11T22:28:07.957Z	INFO	service_id	{"value": "wazobia"}
+2026-03-11T22:28:07.957Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-11T22:28:07.957Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-11T22:28:07.96Z	INFO	Blockchain params	{"network": "sepolia", "network_id": "11155111", "registry_address": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "ethereum_json_rpc_http_endpoint": "https://eth-sepolia.g.alchemy.com/v2/mC68UmWOf00Cr9wQFHLYT", "ethereum_json_rpc_ws_endpoint": "wss://sepolia.infura.io/ws/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-11T22:28:07.994Z	INFO	Daemon version is v6.2.1
+2026-03-11T22:28:07.995Z	INFO	heartbeat service endpoint not configured, will be using service endpoint to ping the service
+2026-03-11T22:28:07.999Z	FATAL	Unable to initialize daemon: unable to load specific SSL X509 keypair: open /etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem: permission denied 
+About error & possible fixes: https://dev.singularitynet.io/docs/products/DecentralizedAIPlatform/Daemon/error-codes/#_6 
+2026-03-11T22:37:59.903Z	INFO	Logger initialized	{"level": "debug"}
+2026-03-11T22:37:59.904Z	INFO	Final configuration: 
+2026-03-11T22:37:59.904Z	INFO	allowed_user_flag	{"value": false}
+2026-03-11T22:37:59.904Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-11T22:37:59.905Z	INFO	blockchain_enabled	{"value": false}
+2026-03-11T22:37:59.905Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-11T22:37:59.905Z	INFO	daemon_endpoint	{"value": "0.0.0.0:10000"}
+2026-03-11T22:37:59.905Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-11T22:37:59.905Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-11T22:37:59.905Z	INFO	ipfs_endpoint	{"value": "https://ipfs.singularitynet.io:443"}
+2026-03-11T22:37:59.905Z	INFO	lighthouse_endpoint	{"value": "https://gateway.lighthouse.storage/ipfs/"}
+2026-03-11T22:37:59.905Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-11T22:37:59.905Z	INFO	metering_enabled	{"value": "false"}
+2026-03-11T22:37:59.905Z	INFO	metering_endpoint	{"value": "https://marketplace-mt-v2.singularitynet.io"}
+2026-03-11T22:37:59.905Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-11T22:37:59.905Z	INFO	passthrough_enabled	{"value": true}
+2026-03-11T22:37:59.905Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-11T22:37:59.905Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-11T22:37:59.905Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-11T22:37:59.905Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-11T22:37:59.905Z	INFO	service_endpoint	{"value": "http://localhost:50051"}
+2026-03-11T22:37:59.905Z	INFO	service_id	{"value": "wazobia"}
+2026-03-11T22:37:59.905Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-11T22:37:59.905Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-11T22:37:59.906Z	INFO	Blockchain params	{"network": "sepolia", "network_id": "11155111", "registry_address": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "ethereum_json_rpc_http_endpoint": "https://eth-sepolia.g.alchemy.com/v2/mC68UmWOf00Cr9wQFHLYT", "ethereum_json_rpc_ws_endpoint": "wss://sepolia.infura.io/ws/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-11T22:37:59.943Z	INFO	Daemon version is v6.2.1
+2026-03-11T22:37:59.943Z	INFO	heartbeat service endpoint not configured, will be using service endpoint to ping the service
+2026-03-11T22:37:59.949Z	DEBUG	enabling SSL support via X509 keypair
+2026-03-11T22:37:59.953Z	INFO	Blockchain is disabled: no payment validation
+2026-03-11T22:37:59.953Z	INFO	✅ Daemon successfully started and ready to accept requests

@@ -1,0 +1,26 @@
+{
+        "blockchain_enabled": false,
+        "blockchain_network_selected": "sepolia",
+        "daemon_endpoint": "0.0.0.0:10000",
+        "daemon_group_name": "default_group",
+        "ipfs_endpoint": "https://ipfs.singularitynet.io:443",
+        "organization_id": "0bf2d4ddfce54ccf8b7b00a900285e03",
+        "service_id": "wazobia",
+        "service_endpoint": "http://localhost:50051",
+        "metering_enabled": "false",
+        "metering_endpoint": "https://marketplace-mt-v2.singularitynet.io",
+        "private_key_for_metering": "8ec5f2b1fb67cb36d0ad9e2ee7fdd6fe490bdd5391b51c8466ac598bb815f41c",
+        "ethereum_json_rpc_http_endpoint": "https://eth-sepolia.g.alchemy.com/v2/mC68UmWOf00Cr9wQFHLYT",
+        "payment_channel_cert_path": "/var/lib/etcd/cfssl/client.pem",
+        "payment_channel_ca_path": "/var/lib/etcd/cfssl/ca.pem",
+        "payment_channel_key_path": "/var/lib/etcd/cfssl/client-key.pem",
+        "ssl_cert": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem",
+        "ssl_key": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem",
+        "log": {
+            "level": "debug",
+            "output": {
+                "type": ["stdout", "file"]
+            }
+        },
+        "private_key_for_free_calls": "" 
+}

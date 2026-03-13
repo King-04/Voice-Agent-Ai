@@ -1,0 +1,30 @@
+# Core Dependencies
+livekit-agents==1.4.3
+livekit-plugins-openai==0.6.0
+livekit-api
+livekit==1.1.2
+python-dotenv==1.0.0
+
+# Audio Processing
+pydub==0.25.1
+ffmpeg-python==0.2.0
+
+# gRPC
+grpcio==1.78.0
+grpcio-tools==1.78.0
+grpcio-health-checking==1.78.0
+
+# REST API
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+aiofiles==24.1.0
+
+# HTTP Client
+requests==2.32.3
+
+# Protocol Buffers
+protobuf==5.29.2
+
+# Utilities
+asyncio-mqtt==0.16.2

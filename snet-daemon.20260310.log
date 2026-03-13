@@ -1,0 +1,116 @@
+2026-03-10T22:38:52.641Z	INFO	Logger initialized
+2026-03-10T22:38:52.641Z	INFO	Final configuration: 
+2026-03-10T22:38:52.641Z	INFO	alerts_email	{"value": ""}
+2026-03-10T22:38:52.641Z	INFO	allowed_user_flag	{"value": false}
+2026-03-10T22:38:52.641Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-10T22:38:52.641Z	INFO	auto_ssl_domain	{"value": ""}
+2026-03-10T22:38:52.641Z	INFO	blockchain_enabled	{"value": false}
+2026-03-10T22:38:52.641Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-10T22:38:52.641Z	INFO	daemon_end_point	{"value": "127.0.0.1:8080"}
+2026-03-10T22:38:52.641Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-10T22:38:52.641Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-10T22:38:52.641Z	INFO	ipfs_end_point	{"value": "http://ipfs.singularitynet.io:80"}
+2026-03-10T22:38:52.641Z	INFO	ipfs_timeout	{"value": 30}
+2026-03-10T22:38:52.642Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-10T22:38:52.642Z	INFO	metering_enabled	{"value": "false"}
+2026-03-10T22:38:52.642Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-10T22:38:52.642Z	INFO	passthrough_enabled	{"value": true}
+2026-03-10T22:38:52.642Z	INFO	passthrough_endpoint	{"value": "YOUR_SERVICE_ENDPOINT"}
+2026-03-10T22:38:52.642Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-10T22:38:52.642Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-10T22:38:52.642Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-10T22:38:52.642Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-10T22:38:52.642Z	INFO	service_heartbeat_type	{"value": "http"}
+2026-03-10T22:38:52.642Z	INFO	service_id	{"value": "wazobia"}
+2026-03-10T22:38:52.642Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-10T22:38:52.642Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-10T22:38:52.642Z	INFO	Etcd server is disabled in the config file.
+2026-03-10T22:38:52.645Z	INFO	Derive data from JSON	{"Network": "sepolia", "NetwrokId": "11155111", "RegistryAddress": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "Blockchain endpoint": "https://sepolia.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-10T22:38:52.646Z	FATAL	Unable to initialize daemon	{"error": "passthrough_endpoint is the endpoint of your AI service in the daemon config and needs to be a valid url."}
+2026-03-10T22:41:09.638Z	INFO	Logger initialized
+2026-03-10T22:41:09.64Z	INFO	Final configuration: 
+2026-03-10T22:41:09.64Z	INFO	alerts_email	{"value": ""}
+2026-03-10T22:41:09.64Z	INFO	allowed_user_flag	{"value": false}
+2026-03-10T22:41:09.64Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-10T22:41:09.64Z	INFO	auto_ssl_domain	{"value": ""}
+2026-03-10T22:41:09.641Z	INFO	blockchain_enabled	{"value": false}
+2026-03-10T22:41:09.641Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-10T22:41:09.641Z	INFO	daemon_end_point	{"value": "127.0.0.1:8080"}
+2026-03-10T22:41:09.641Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-10T22:41:09.641Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-10T22:41:09.641Z	INFO	ipfs_end_point	{"value": "http://ipfs.singularitynet.io:80"}
+2026-03-10T22:41:09.641Z	INFO	ipfs_timeout	{"value": 30}
+2026-03-10T22:41:09.641Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-10T22:41:09.641Z	INFO	metering_enabled	{"value": "false"}
+2026-03-10T22:41:09.641Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-10T22:41:09.641Z	INFO	passthrough_enabled	{"value": true}
+2026-03-10T22:41:09.641Z	INFO	passthrough_endpoint	{"value": "YOUR_SERVICE_ENDPOINT"}
+2026-03-10T22:41:09.641Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-10T22:41:09.641Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-10T22:41:09.641Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-10T22:41:09.641Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-10T22:41:09.641Z	INFO	service_heartbeat_type	{"value": "http"}
+2026-03-10T22:41:09.641Z	INFO	service_id	{"value": "wazobia"}
+2026-03-10T22:41:09.641Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-10T22:41:09.641Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-10T22:41:09.642Z	INFO	Etcd server is disabled in the config file.
+2026-03-10T22:41:09.642Z	INFO	Derive data from JSON	{"Network": "sepolia", "NetwrokId": "11155111", "RegistryAddress": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "Blockchain endpoint": "https://sepolia.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-10T22:41:09.642Z	FATAL	Unable to initialize daemon	{"error": "passthrough_endpoint is the endpoint of your AI service in the daemon config and needs to be a valid url."}
+2026-03-10T22:44:26.931Z	INFO	Logger initialized
+2026-03-10T22:44:26.931Z	INFO	Final configuration: 
+2026-03-10T22:44:26.931Z	INFO	alerts_email	{"value": ""}
+2026-03-10T22:44:26.931Z	INFO	allowed_user_flag	{"value": false}
+2026-03-10T22:44:26.931Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-10T22:44:26.931Z	INFO	auto_ssl_domain	{"value": ""}
+2026-03-10T22:44:26.931Z	INFO	blockchain_enabled	{"value": false}
+2026-03-10T22:44:26.931Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-10T22:44:26.931Z	INFO	daemon_end_point	{"value": "127.0.0.1:8080"}
+2026-03-10T22:44:26.931Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-10T22:44:26.931Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-10T22:44:26.931Z	INFO	ipfs_end_point	{"value": "http://ipfs.singularitynet.io:80"}
+2026-03-10T22:44:26.931Z	INFO	ipfs_timeout	{"value": 30}
+2026-03-10T22:44:26.931Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-10T22:44:26.931Z	INFO	metering_enabled	{"value": "false"}
+2026-03-10T22:44:26.931Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-10T22:44:26.931Z	INFO	passthrough_enabled	{"value": true}
+2026-03-10T22:44:26.931Z	INFO	passthrough_endpoint	{"value": "YOUR_SERVICE_ENDPOINT"}
+2026-03-10T22:44:26.931Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-10T22:44:26.931Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-10T22:44:26.931Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-10T22:44:26.931Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-10T22:44:26.931Z	INFO	service_heartbeat_type	{"value": "http"}
+2026-03-10T22:44:26.931Z	INFO	service_id	{"value": "wazobia"}
+2026-03-10T22:44:26.931Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-10T22:44:26.931Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-10T22:44:26.932Z	INFO	Etcd server is disabled in the config file.
+2026-03-10T22:44:26.933Z	INFO	Derive data from JSON	{"Network": "sepolia", "NetwrokId": "11155111", "RegistryAddress": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "Blockchain endpoint": "https://sepolia.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-10T22:44:26.933Z	FATAL	Unable to initialize daemon	{"error": "passthrough_endpoint is the endpoint of your AI service in the daemon config and needs to be a valid url."}
+2026-03-10T23:01:30.075Z	INFO	Logger initialized
+2026-03-10T23:01:30.077Z	INFO	Final configuration: 
+2026-03-10T23:01:30.077Z	INFO	alerts_email	{"value": ""}
+2026-03-10T23:01:30.077Z	INFO	allowed_user_flag	{"value": false}
+2026-03-10T23:01:30.077Z	INFO	auto_ssl_cache_dir	{"value": ".certs"}
+2026-03-10T23:01:30.077Z	INFO	auto_ssl_domain	{"value": ""}
+2026-03-10T23:01:30.077Z	INFO	blockchain_enabled	{"value": false}
+2026-03-10T23:01:30.077Z	INFO	blockchain_network_selected	{"value": "sepolia"}
+2026-03-10T23:01:30.077Z	INFO	daemon_end_point	{"value": "127.0.0.1:8080"}
+2026-03-10T23:01:30.077Z	INFO	daemon_group_name	{"value": "default_group"}
+2026-03-10T23:01:30.077Z	INFO	daemon_type	{"value": "grpc"}
+2026-03-10T23:01:30.077Z	INFO	ipfs_end_point	{"value": "http://ipfs.singularitynet.io:80"}
+2026-03-10T23:01:30.077Z	INFO	ipfs_timeout	{"value": 30}
+2026-03-10T23:01:30.078Z	INFO	max_message_size_in_mb	{"value": 4}
+2026-03-10T23:01:30.078Z	INFO	metering_enabled	{"value": "false"}
+2026-03-10T23:01:30.078Z	INFO	organization_id	{"value": "0bf2d4ddfce54ccf8b7b00a900285e03"}
+2026-03-10T23:01:30.078Z	INFO	passthrough_enabled	{"value": true}
+2026-03-10T23:01:30.078Z	INFO	passthrough_endpoint	{"value": "YOUR_SERVICE_ENDPOINT"}
+2026-03-10T23:01:30.078Z	INFO	payment_channel_ca_path	{"value": "/var/lib/etcd/cfssl/ca.pem"}
+2026-03-10T23:01:30.078Z	INFO	payment_channel_cert_path	{"value": "/var/lib/etcd/cfssl/client.pem"}
+2026-03-10T23:01:30.078Z	INFO	payment_channel_key_path	{"value": "/var/lib/etcd/cfssl/client-key.pem"}
+2026-03-10T23:01:30.078Z	INFO	payment_channel_storage_type	{"value": "etcd"}
+2026-03-10T23:01:30.078Z	INFO	service_heartbeat_type	{"value": "http"}
+2026-03-10T23:01:30.078Z	INFO	service_id	{"value": "wazobia"}
+2026-03-10T23:01:30.078Z	INFO	ssl_cert	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/fullchain.pem"}
+2026-03-10T23:01:30.078Z	INFO	ssl_key	{"value": "/etc/letsencrypt/live/devtraining7.deep-lab.ai/privkey.pem"}
+2026-03-10T23:01:30.079Z	INFO	Etcd server is disabled in the config file.
+2026-03-10T23:01:30.08Z	INFO	Derive data from JSON	{"Network": "sepolia", "NetwrokId": "11155111", "RegistryAddress": "0x4DCc70c6FCE4064803f0ae0cE48497B3f7182e5D", "Blockchain endpoint": "https://sepolia.infura.io/v3/09027f4a13e841d48dbfefc67e7685d5"}
+2026-03-10T23:01:30.08Z	FATAL	Unable to initialize daemon	{"error": "passthrough_endpoint is the endpoint of your AI service in the daemon config and needs to be a valid url."}
