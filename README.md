@@ -2,7 +2,7 @@
 
 > AI-powered voice assistant supporting English, Yoruba, Hausa, Nigerian Pidgin, and Igbo - deployed on SingularityNET decentralized AI marketplace.
 
-## This repo is ONLY meant for SNET deployment. And used by dedicated users.
+## This repo is ONLY meant for SNET testnet deployment. And used by dedicated users.
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![gRPC](https://img.shields.io/badge/gRPC-1.x-green.svg)](https://grpc.io/)
