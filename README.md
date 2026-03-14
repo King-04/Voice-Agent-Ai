@@ -2,6 +2,8 @@
 
 > AI-powered voice assistant supporting English, Yoruba, Hausa, Nigerian Pidgin, and Igbo - deployed on SingularityNET decentralized AI marketplace.
 
+## This repo is ONLY meant for SNET deployment. And used by dedicated users.
+
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![gRPC](https://img.shields.io/badge/gRPC-1.x-green.svg)](https://grpc.io/)
 [![LiveKit](https://img.shields.io/badge/LiveKit-Enabled-orange.svg)](https://livekit.io/)
@@ -172,10 +174,9 @@
 ## 🚀 Installation
 
 ### 1. Clone Repository
-
+oriinal repo from Team Eusate
 ```bash
-git clone https://github.com/YOUR_USERNAME/wazobia-voice-agent.git
-cd wazobia-voice-agent
+git clone https://github.com/EUSATE/Deepfunding-Hackathon.git
 ```
 
 ### 2. Install System Dependencies
@@ -215,7 +216,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 5. Install SNET Tools (Optional - for SingularityNET deployment)
+### 5. Install SNET Tools (for SingularityNET deployment)
 
 ```bash
 # Install SNET CLI
@@ -257,27 +258,12 @@ LIVEKIT_API_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-**Security:** Never commit `.env` to Git!
-
 ### 2. SNET Daemon Configuration (Optional)
 
 Edit `snet.config.json`:
 
-```json
-{
-    "blockchain_enabled": false,
-    "daemon_endpoint": "0.0.0.0:10000",
-    "ipfs_endpoint": "https://ipfs.singularitynet.io:443",
-    "organization_id": "your-org-id",
-    "service_id": "wazobia",
-    "passthrough_enabled": true,
-    "passthrough_endpoint": "localhost:50051",
-    "ssl_cert": "/path/to/cert.pem",
-    "ssl_key": "/path/to/key.pem"
-}
-```
 
-### 3. Generate Protocol Buffers (if modified)
+### 3. Generate Protocol Buffers from "audio_service.proto"
 
 ```bash
 # Python stubs
@@ -312,7 +298,7 @@ python deepfunding_agent.py start
 
 ### Production Setup (Systemd + Tmux)
 
-#### Option 1: Systemd Service (Wazobia Agent)
+#### 1: Systemd Service (Wazobia Agent)
 
 ```bash
 # Create systemd service
@@ -348,27 +334,7 @@ sudo systemctl start wazobia-agent
 sudo systemctl status wazobia-agent
 ```
 
-#### Option 2: Tmux Sessions (gRPC + SNET Daemon)
-
-Use the management script:
-
-```bash
-# Make script executable
-chmod +x manage-services.sh
-
-# Start all services
-./manage-services.sh start
-
-# Check status
-./manage-services.sh status
-
-# View logs
-./manage-services.sh logs-grpc
-./manage-services.sh logs-snetd
-
-# Stop all
-./manage-services.sh stop
-```
+#### 2: Tmux Sessions (gRPC + SNET Daemon)
 
 Manual tmux commands:
 
@@ -391,7 +357,9 @@ tmux attach -t grpc-server
 
 ---
 
-## 🔌 API Interfaces
+## 🔌 API Interfaces (If tests need to be run to test grpc server)
+
+can you bank.mp3 for testing
 
 ### 1. gRPC API (Port 50051)
 
@@ -401,33 +369,8 @@ tmux attach -t grpc-server
 python audio_client_grpc.py input_audio.mp3 response.wav
 ```
 
-**From Code:**
 
-```python
-import grpc
-from audio_service_pb2 import AudioRequest
-from audio_service_pb2_grpc import AudioServiceStub
-
-channel = grpc.insecure_channel('localhost:50051')
-stub = AudioServiceStub(channel)
-
-with open('input.mp3', 'rb') as f:
-    audio_data = f.read()
-
-request = AudioRequest(
-    audio_data=audio_data,
-    filename='input.mp3',
-    format='mp3'
-)
-
-response = stub.ProcessAudio(request)
-
-if response.success:
-    with open('output.wav', 'wb') as f:
-        f.write(response.audio_data)
-```
-
-### 2. REST API (Port 8000)
+### 2. REST API (Port 8000) - Initial REST setup
 
 **Python Client:**
 
@@ -435,28 +378,8 @@ if response.success:
 python simple_client.py input_audio.mp3 response.wav
 ```
 
-**Curl:**
 
-```bash
-curl -X POST -F "audio=@input.mp3" \
-  http://localhost:8000/chat \
-  -o response.wav
-```
-
-**From Code:**
-
-```python
-import requests
-
-with open('input.mp3', 'rb') as f:
-    files = {'audio': ('input.mp3', f, 'audio/mpeg')}
-    response = requests.post('http://localhost:8000/chat', files=files)
-
-with open('output.wav', 'wb') as f:
-    f.write(response.content)
-```
-
-### 3. LiveKit WebSocket (Real-time)
+### 3. LiveKit WebSocket (Real-time)-  Test realtime convo interractions
 
 Connect via LiveKit SDK or browser at:
 ```
@@ -467,28 +390,7 @@ Enter your LiveKit credentials and join a room.
 
 ---
 
-## 🌐 SingularityNET Integration
-
-### 1. Service Registration
-
-```bash
-# Create identity
-snet identity create mykey key
-
-# Set network
-snet network sepolia
-
-# Register organization
-snet organization create YOUR_ORG_ID
-
-# Register service
-snet service publish YOUR_ORG_ID wazobia \
-  --agent-address YOUR_AGENT_ADDRESS \
-  --price 1000000 \
-  --endpoint http://your-vps-ip:10000
-```
-
-### 2. Deploy UI
+##   Deploy UI
 
 Copy UI files to SingularityNET DApp:
 
@@ -501,16 +403,10 @@ ui/
 └── audio_service_pb_service.js
 ```
 
-Upload to SingularityNET marketplace UI repository.
+Zip UI files.
 
-### 3. Test on Marketplace
 
-1. Go to [SingularityNET Marketplace](https://marketplace.singularitynet.io)
-2. Search for "Wazobia"
-3. Upload audio file
-4. Receive response
-
----
+--- 
 
 ## 💻 Development
 
@@ -536,11 +432,9 @@ wazobia-voice-agent/
 │   ├── style.css
 │   ├── audio_service_pb.js
 │   └── audio_service_pb_service.js
-├── docs/                          # Documentation
-│   └── API.md
-└── scripts/                       # Utility scripts
-    └── setup.sh
 ```
+
+### Note all needed files for service setup on the marketplace are in the repo but might not be displayed in this directory tree.
 
 ### Running Tests
 
@@ -642,10 +536,6 @@ grep LIVEKIT .env
 # Check daemon status
 sudo snetd --config snet.config.json
 
-# Verify passthrough endpoint
-grep passthrough snet.config.json
-```
-
 ### Debug Mode
 
 Enable debug logging:
@@ -687,24 +577,6 @@ sudo systemctl restart wazobia-agent
 
 ---
 
-## 🤝 Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-### Development Guidelines
-
-- Follow PEP 8 for Python code
-- Add tests for new features
-- Update documentation
-- Maintain backward compatibility
-
----
 
 ## 📜 License
 
@@ -721,41 +593,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Community** - Contributors and testers
 
 ---
-
-## 📞 Contact & Support
-
-- **GitHub Issues:** [Report bugs](https://github.com/YOUR_USERNAME/wazobia-voice-agent/issues)
-- **Email:** info@eusate.com
-- **Website:** [eusate.com](https://eusate.com)
-- **Twitter:** [@eusate_ai](https://twitter.com/eusate_ai)
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Docker deployment
-- [ ] More African languages (Swahili, Zulu, etc.)
-- [ ] Voice cloning support
-- [ ] Multi-turn conversation history
-- [ ] Mobile app (iOS/Android)
-- [ ] Batch processing API
-- [ ] WebRTC direct integration
-- [ ] Offline mode
-
----
-
-## 📈 Metrics & Analytics
-
-Track your usage:
-
-```bash
-# View transcripts
-ls transcripts/
-
-# Count conversations
-ls transcripts/*.txt | wc -l
-
-# Service uptime
-systemctl status wazobia-agent
-```
-
